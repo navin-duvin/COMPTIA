@@ -1,4 +1,4 @@
-						COMPTIA A+ NOTES
+							COMPTIA A+ NOTES
 
 
 													
@@ -9,108 +9,109 @@ Types of Motherboard
 
 Based on Component Placement
 We have two types
-INTEGRATED MOTHERBOARD
-Small
-They are used in laptops
-Size is very small
-Portable
-No wires
+	INTEGRATED MOTHERBOARD
+		Small
+		They are used in laptops
+		Size is very small
+		Portable
+		No wires
 Disadvantage - it produces more heat, troubleshooting is tough
 
-NON INTEGRATED MOTHERBOARD
-Big
-They are used in desktops
-Heat produced is very less
-Troubleshooting is easy
-Size is big
-Not portable
-More no of wires
+	NON INTEGRATED MOTHERBOARD
+		Big
+		They are used in desktops
+		Heat produced is very less
+		Troubleshooting is easy
+		Size is big
+		Not portable
+		More no of wires
+
 BASED ON FORM FACTOR
-We have two types of motherboards
+
 ATX
 Advanced technology extended 
-80% of all the desktops, laptops are ATX motherboards
-Perpendicular 90 degrees
+	80% of all the desktops, laptops are ATX motherboards
+	Perpendicular 90 degrees
 
 BTX
 Balanced technology extended
-This is used in server rooms
-Speed is high and heat produced is high - both are maintained equally.
-Not perpendicular.
+	This is used in server rooms
+	Speed is high and heat produced is high - both are maintained equally.
+	Not perpendicular.
 
 CHIPSET
-Checks with all the components functionality with input and output process
-Evolution - Electronic components -> circuit board -> integrated circuit -> chipset
-Intel manufactured motherboard - 2 chipset
-Sis - silicon integrated system motherboard - 1 chipset
-Iha - intel hub architecture - 1 chipset
+	Checks with all the components functionality with input and output process
+	Evolution - Electronic components -> circuit board -> integrated circuit -> chipset
+	Intel manufactured motherboard - 2 chipset
+	Sis - silicon integrated system motherboard - 1 chipset
+	Iha - intel hub architecture - 1 chipset
 
 PROCESSOR
-Has two components with it
-North Bridge : connect all the high speed components to the processor.(ex : RAM,AGP,PCI)
-South Bridge : connect all the slow speed components to the processor.(ex:USB,BIOS)
+	Has two components with it
+	North Bridge : connect all the high speed components to the processor.(ex : RAM,AGP,PCI)
+	South Bridge : connect all the slow speed components to the processor.(ex:USB,BIOS)
 
 PROCESSOR SLOT
-LGA : Land Grid Array (old)
-PGA : Pin Grid Array (new)
+	LGA : Land Grid Array (old)
+	PGA : Pin Grid Array (new)
 
 EXPANSION SLOT
-Used to upgrade your computer
-Troubleshooting
+	Used to upgrade your computer
+	Troubleshooting
 Peripheral ports (backside ports)
-PCI - Peripheral Component Interconnect
-AGP - Accelerated Graphics Port 
-PCIe -PCI express : PCI + AGP
+	PCI - Peripheral Component Interconnect
+	AGP - Accelerated Graphics Port 
+	PCIe -PCI express : PCI + AGP
 
 MEMORY SLOT
-RAM slot
-Old : Single Inline Memory Module (SIMM)
-Desktops : Dual Inline Memory Module (DIMM)
-Laptops : Small Outline Dual Inline Memory Module (SODIMM)
-Mobile : Micro DIMM
+	RAM slot
+	Old : Single Inline Memory Module (SIMM)
+	Desktops : Dual Inline Memory Module (DIMM)
+	Laptops : Small Outline Dual Inline Memory Module (SODIMM)
+	Mobile : Micro DIMM
 
 POWER CONNECTOR
-SMPS : SWITCH MODE POWER SUPPLY
-Converts actual current to direct current and then feed its to other components
-Ex : mobile charger
+	SMPS : SWITCH MODE POWER SUPPLY
+	Converts actual current to direct current and then feed its to other components
+	Ex : mobile charger
 
 ON BOARD DISK DRIVE CONNECTORS
-ON BOARD - motherboard
-DISK DRIVE - hdd, fdd, cd/dvd
-CONNECTORS - PATA & SATA
-PATA - Parallel Advanced Technology Attachment
-Old, slow, 40 pins
-SATA - Serial Advanced Technology Attachment
-New, fast, 7 pins
-PATA - IDE/EIDE
-IDE - Integrated Drive Electronics
-EIDE - Enhanced Integrated Drive Electronics
+	ON BOARD - motherboard
+	DISK DRIVE - hdd, fdd, cd/dvd
+	CONNECTORS - PATA & SATA
+	PATA - Parallel Advanced Technology Attachment
+	Old, slow, 40 pins
+	SATA - Serial Advanced Technology Attachment
+	New, fast, 7 pins
+	PATA - IDE/EIDE
+	IDE - Integrated Drive Electronics
+	EIDE - Enhanced Integrated Drive Electronics
 
 KEYBOARD CONNECTORS
-AT - Advanced Technology , 5 pins
-PS/2 - Personal System , 6 pins
-Purple - keyboard
-Green - mouse
+	AT - Advanced Technology , 5 pins
+	PS/2 - Personal System , 6 pins
+	Purple - keyboard
+	Green - mouse
 
 BIOS
-Basic Input Output Settings
-Blue color screen when starting your pc.
-F1 or F8 to start BIOS
-BOOT DEVICE PRIORITY - setting priority in which order the processor should choose os from hdd or cd/dvd or usb.
+	Basic Input Output Settings
+	Blue color screen when starting your pc.
+	F1 or F8 to start BIOS
+	BOOT DEVICE PRIORITY - setting priority in which order the processor should choose os from hdd or cd/dvd or usb.
 
 CMOS
-Complementary Metal Oxide Semiconductor
-Responsible for date & time and BIOS
-Failure  : date and time moving backwards, password lost or internet not connected.
+	Complementary Metal Oxide Semiconductor
+	Responsible for date & time and BIOS
+	Failure  : date and time moving backwards, password lost or internet not connected.
 
 JUMPER
-Used for hardware configuration
-This decides which harddisk os should be the master os.
+	Used for hardware configuration
+	This decides which harddisk os should be the master os.
 
 FIRMWARE
-It is a software
-Any important software is called a firmware
-Ex : vlc, windows xp - firmware
+	It is a software
+	Any important software is called a firmware
+	Ex : vlc, windows xp - firmware
 ---------------------------------------------------
 IDENTIFYING PURPOSE AND CHARACTERISTICS OF PROCESSOR
 
@@ -140,18 +141,12 @@ Computer speed is the least speed.
 
 CHARACTERISTICS
 
-Threading Technology
+	Threading Technology
 
-Ability of  a processor to perform multiple task at a time.
+	Ability of  a processor to perform multiple task at a time.
 
-Overclocking
-Process of increasing processor speed manually. Increasing the clock rate.
-
-TODO
-1. BGA - abbreviation, function, drawbacks
-2. Printing instruction
-3. Overclocking - process of increasing the speed manually
-4. Computer Beep Errors (10 sounds)
+	Overclocking
+		Process of increasing processor speed manually. Increasing the clock rate.
 
 
 CORE SPECIFICATION
@@ -165,10 +160,10 @@ No of Cores            Name
 .
 .
 .
-20                ICOSA
+20               ICOSA
 
 IDENTIFYING PURPOSE AND CHARACTERISTICS OF STORAGE DEVICES
-
+----------------------------------------------------------
 HARD DISK
 FLOPPY DISK
 ZIP DRIVE
@@ -179,36 +174,34 @@ ADVANCED STORAGE
 
 HARD DISK
 
-To recover data from the hard disk - data recovery software is used. One such is 7 Data Recovery.
+	To recover data from the hard disk - data recovery software is used. One such is 7 Data Recovery.
 
-HDD spinning speed - 3200 to 7400 rpm (revolution per min)
-5400 - 15000 rpm
+	HDD spinning speed - 3200 to 7400 rpm (revolution per min)
+	5400 - 15000 rpm
 
-It has a platter, spindle, actuator and actuator arms
-It also has connections for power supply, jumpers and ide (sata/pata)
+	It has a platter, spindle, actuator and actuator arms
+	It also has connections for power supply, jumpers and ide (sata/pata)
 
 
 FLOPPY DISK
-Used for moving data between computers.
-Speed is very slow and the size is also small
+	Used for moving data between computers.
+	Speed is very slow and the size is also small
 
 ZIP DRIVE
-Advanced version of floppy disk
-Used mainly for backing up.
-Size was big and the speed was also high
+	Advanced version of floppy disk
+	Used mainly for backing up.
+	Size was big and the speed was also high
 
 TAPE DRIVE
-In CCTV’s
-1 harddisk - 6000 - i tb - 1 month - 1 cctv
-
-
-Are very cheap. Like 12td - 20,000 a year.
+	In CCTV’s
+	1 harddisk - 6000 - i tb - 1 month - 1 cctv
+	Are very cheap. Like 12td - 20,000 a year.
 
 FLASH DRIVE
-Pendrive / usb / thumb drive
-Version : usb 2.0 (old), 3.0 (new)
-SD Card - Secure digital
-Class : 2    4    6    8    10 - Data transfer rate
+	Pendrive / usb / thumb drive
+	Version : usb 2.0 (old), 3.0 (new)
+	SD Card - Secure digital
+	Class : 2    4    6    8    10 - Data transfer rate
 
 CD/DVD
 CD - COMPACT DISC
@@ -220,15 +213,15 @@ Single Sided Double Layered Cd/DVD
 Double SIded Double Layered CD/DVD
 
 Bluray
-Uses blue lasers instead of traditional red lasers, shorter wavelength, smaller beams, more data
-25 GB capacity as compared to 4.7 GB in DVDs
-1080p support
-Support Dolby and DTS HD audio
+	Uses blue lasers instead of traditional red lasers, shorter wavelength, smaller beams, more data
+	25 GB capacity as compared to 4.7 GB in DVDs
+	1080p support
+	Support Dolby and DTS HD audio
 
 
 HD/HD-DVDs
-15 GB capacity
-1080p support
+	15 GB capacity
+	1080p support
 
 --------------------------------------------------------
 IDENTIFYING PURPOSE AND CHARACTERISTICS OF MEMORY DEVICES
@@ -244,47 +237,48 @@ ERROR CHECKING IN RAM
 PARITY RAM
 
 NAME        BITS        NO OF 1’S        PARITY BIT        RESULT
-Sowmitha    010101    Odd            1            010101 | 1
-Pratheek    011011    Even            0            011011 | 0
-Sankar        010110    Odd            1            010110 | 1
+A    010101    Odd            1            010101 | 1
+B    011011    Even           0            011011 | 0
+C    010110    Odd            1            010110 | 1
 
 This concept is called “False Positive”
 
 NON PARITY RAM
 
 NAME        BITS        NO OF 1’S        RESULT
-Sowmitha    010101    3            010101 | 3
-Pratheek    011011    4            011011 | 4
-Sankar        111110    3            010110 | 5
+A    010101    3            010101 | 3
+B    011011    4            011011 | 4
+C    111110    3            010110 | 5
 
 This is called “Checksum”
 
 RAM
 
-Random Access Memory
-Temporary memory
-WE have two types of RAM - Static RAM and Dynamic RAM
+	Random Access Memory
+	Temporary memory
+	WE have two types of RAM - Static RAM and Dynamic RAM
 
 Static RAM
 
-It is also called as asynchronous RAM
-Non volatile 
-ZBT
-SRAM
-In static RAM, the data will always be permanent.
-Because it will not obey the processor and there is no refresh signal going to static ram from processor
-Its speed depends on itself
+	It is also called as asynchronous RAM
+	Non volatile 
+	ZBT
+	SRAM
+	In static RAM, the data will always be permanent.
+	Because it will not obey the processor and there is no refresh signal going to static ram from processor
+	Its speed depends on itself
 
 DYnamic RAM
-Synchronous DRAM
-DDR1
-DDR2
-DDR3
-DDR4
-DRD
-In dynamic RAM, the data is lost
-Because it always obeys the processor. SO whenver the signal from processor to Dynamic RAM stops, there is a data loss.
-The speed depends on the processor.
+	Synchronous DRAM
+	DDR1
+	DDR2
+	DDR3
+	DDR4
+	DRD
+
+	In dynamic RAM, the data is lost
+	Because it always obeys the processor. SO whenver the signal from processor to Dynamic RAM stops, there is a data loss.
+	The speed depends on the processor.
 
 SDRAM - SIngle Data Rate RAM / Synchronous DRAM
 DDR - Double Data Rate RAM
@@ -293,8 +287,8 @@ ZBT - Zero Bus Turnaround (remove all the dead bus cycles from the static RAM)
 
 SPEED IN RAM
 
-Type        Data Rate    *    No of Bits Transferred    *Clock Rate    = Speed in MBPS
-SDRAM    1        *    8*100                    = 800 mbps
+Type        Data Rate    *No of Bits Transferred    *Clock Rate    = Speed in MBPS
+SDRAM    	1        *    8*100                    = 800 mbps
 DDR1        2        *    8*100                    =1600 mbps
 DDR2        4        *    8*100                    =3200 mbps
 DDR3        8        
@@ -311,59 +305,59 @@ DDR2
 DDR3
 
 DRD - Direct Rambus Dynamic
-This was introduced by “Rambus Inc”
-Speed is high, heat generated is also high
-It was mostly used in playstation, bio medical, home theatres
-But not used now.
+	This was introduced by “Rambus Inc”
+	Speed is high, heat generated is also high
+	It was mostly used in playstation, bio medical, home theatres
+	But not used now.
 
 Static RAM
 
-Costly
-Speed is high
-Used in GPS and Bio medicals
-This has the memory , L1,L2,L3
+	Costly
+	Speed is high
+	Used in GPS and Bio medicals
+	This has the memory , L1,L2,L3
 
 ROM
-
-Read Only Memory
-Permanent Memory
+	Read Only Memory
+	Permanent Memory
 
 PROM
-Programmable Read Only Memory
-AUdio / Video CD
+	Programmable Read Only Memory
+	AUdio / Video CD
 
 EPROM
-Erasable Programmable Read Only Memory
-EMpty CD
+	Erasable Programmable Read Only Memory
+	EMpty CD
 
 EEPROM
-Electronically Erasable Programmable Read Only Memory
-Using computer’s high voltage to erase the data
+	Electronically Erasable Programmable Read Only Memory
+	Using computer’s high voltage to erase the data
 
 FLASH EEPROM
-Pendrives.
+	Pendrives.
 
 --------------------------------------------------------------
 Identifying PURPOSE AND CHARACTERISTICS OF VIDEO TECHNOLOGIES
 
 Key Terms
-Pixel - tiny particles/elements in a picture (Picture Element)
-Dot Pitch - distance between two pixels. (can be from 0.24 mm to 0.04 mm)
-Resolution - 1024*720 screen resolution . there are like 4 lakh pixels on the screen.
-Refresh Rate - Every video you record, the motion is captured as pictures and every single pic is called a frame. The distance between frames is called the refresh rate.
+	Pixel - tiny particles/elements in a picture (Picture Element)
+	Dot Pitch - distance between two pixels. (can be from 0.24 mm to 0.04 mm)
+	Resolution - 1024*720 screen resolution . there are like 4 lakh pixels on the screen.
+	Refresh Rate - Every video you record, the motion is captured as pictures and every single pic is called a frame. The distance between frames is called the refresh rate.
 
 TECHNOLOGIES
-MONOCHROME - Black/White. IBM introduced this. “Text as graphics”. Connector - DB-9D Subconnector.
-COLOR GRAPHICS ARRAY (CGA) - 4 colours were introduced. Graphics was introduced.
-ENHANCED CGA - 16 colours were introduced. Graphics was enhanced.
-VIDEO GRAPHICS ARRAY -     256 colors were introduced. First cache memory was introduced (256kb). Connector - DB-15D Subconnector.
-Super VGA - VESA (Video Electronics Standard Association) - announced that all IBM products will be standardised.
-DIGITAL VIDEO INTERFACE (DVI) - high quality video. Successor of VGA. Types - DVIA, DVID, DVII.
-HIGH DEFINITION MULTIMEDIA INTERFACE (HDMI) -  used for higher transmission rate. 
-SEPARATE VIDEO (SVIDEO) - old, split video into color and b/w.
-COMPOSITE VIDEO - combine every color into a composite color.
+	MONOCHROME - Black/White. IBM introduced this. “Text as graphics”. Connector - DB-9D Subconnector.
+	COLOR GRAPHICS ARRAY (CGA) - 4 colours were introduced. Graphics was introduced.
+	ENHANCED CGA - 16 colours were introduced. Graphics was enhanced.
+	VIDEO GRAPHICS ARRAY -     256 colors were introduced. First cache memory was introduced (256kb). Connector - DB-15D Subconnector.
+	Super VGA - VESA (Video Electronics Standard Association) - announced that all IBM products will be standardised.
+	DIGITAL VIDEO INTERFACE (DVI) - high quality video. Successor of VGA. Types - DVIA, DVID, DVII.
+	HIGH DEFINITION MULTIMEDIA INTERFACE (HDMI) -  used for higher transmission rate. 
+	SEPARATE VIDEO (SVIDEO) - old, split video into color and b/w.
+	COMPOSITE VIDEO - combine every color into a composite color.
 
 DISPLAY DEVICES
+
 CRT - CATHODE RAY TUBE
 LCD - LIQUID CRYSTAL DISPLAY
 LED - LIGHT EMITTING DIODE
@@ -371,27 +365,27 @@ LED - LIGHT EMITTING DIODE
 
 CRT
 
-Old monitor.
-Consume more power
-Generate more hear
-Graphics is very poor
-Price is very low
+	Old monitor.
+	Consume more power
+	Generate more hear
+	Graphics is very poor
+	Price is very low
 
 LCD
-Introduced in watch,calculator.
-Consumes less power
-Graphics was limited.
-Liquid - neither a liquid nor a solid - semi crystalline.
-Used for dispersing light uniformly.
+	Introduced in watch,calculator.
+	Consumes less power
+	Graphics was limited.
+	Liquid - neither a liquid nor a solid - semi crystalline.
+	Used for dispersing light uniformly.
 
 
 
 LED
-Best used for low power
-Graphics are good
-Direct LED - White LED
-RGB LED - Red,green,blue
-Edge LED - grid line structure.
+	Best used for low power
+	Graphics are good
+	Direct LED - White LED
+	RGB LED - Red,green,blue
+	Edge LED - grid line structure.
 ----------------------------------------------------------------------------------------
 
 IDENTIFYING PURPOSE AND CHARACTERISTICS OF OTHER COMPONENTS
@@ -406,34 +400,34 @@ COOLING SYSTEMS
 
 ADAPTOR CARDS
 
-They are used in expansion slots.
-We have network adaptor cards, sound adaptor cards and video adaptor cards.
+	They are used in expansion slots.
+	We have network adaptor cards, sound adaptor cards and video adaptor cards.
 
 Peripheral components
 
 USB
-Universal Serial Bus
-Type A connector  - Computer End
-Type B connector - Device End
-VErsions  - USB 2.0 (old) and USB 3.0 (new)
+	Universal Serial Bus
+	Type A connector  - Computer End
+	Type B connector - Device End
+	VErsions  - USB 2.0 (old) and USB 3.0 (new)
 
 LAN PORT
-Ethernet POrt / Internet Port/ Wan / NIC (Network Interface Card)
-Function : convert parallel signal into serial signal
+	Ethernet POrt / Internet Port/ Wan / NIC (Network Interface Card)
+	Function : convert parallel signal into serial signal
 
 Computer sends the parallel signal to NIC card. It converts to serial signal and then send it to the server.
 Parallel signal - for shorter distance communication
 Serial signal  - for longer distance communication
 
 PARALLEL PORT
-Used for connecting printers to your computers.
-Unidirectional Parallel Port - there is only communication from computer to printer.
-Bidirectional Parallel Port - there is communication between both the computer and printer
+	Used for connecting printers to your computers.
+	Unidirectional Parallel Port - there is only communication from computer to printer.
+	Bidirectional Parallel Port - there is communication between both the computer and printer
 
 SERIAL PORT
-Used for connecting two devices
-Standard Serial Port - can connect two similar devices
-Null Modem Serial Port - can connect two dissimilar devices
+	Used for connecting two devices
+	Standard Serial Port - can connect two similar devices
+	Null Modem Serial Port - can connect two dissimilar devices
 
 COOLING SYSTEM
 
