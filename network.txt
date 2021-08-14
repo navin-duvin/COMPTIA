@@ -1,0 +1,513 @@
+network fundamental
+
+	connect between 2 or more system to communicate (or) connection between 2 or more systems
+wired
+wireless
+----------------------------
+1.lan-local area network ethernet also(within company)
+2.wan -->2 or more lan (global connectivity)
+3.man metropolitan network(network across the city/town)
+bits-> 0 1 (speed)
+bytes-> 8+bits (data)
+
+---------------------------
+network topology
+	bus--> main connectivity backbone link
+	ring -->ring connection 
+	star --> hub/switch
+	mesh --> all the devices connected to each other
+	tree --> bus + ring
+------------------------------
+OSI model- Open Systems Interconnection Model
+
+process encapsulaion
+		decapsulation
+ 	1.physical --> Bits,cables,NIC
+ 	2.data-link --> ethernet mac,frames,switches,hub,bridges
+	3.network --> ip ,packets,router 
+	4.transport--> TCP UDP segmentation transfer of data, manages data packets
+	5.session --> session establish,manage terminate connection management,traffic control
+	6.presentation --> way of presenting itself encryption,decryption devices
+	7.application --> network acess, enables apps to acess net http,https,ftp,snmp
+
+------------------------------
+
+TCP/IP MODEL
+
+	4.application --> user process like osi (app,pre,session)
+	3.transport  
+	2.internet --> ip packets
+	1.network --> mac ,bits
+
+------------------------------
+ip addressing -network layer
+
+    ip uses unit-packets (ip packets)
+    also uses transport layer to use tcp or udp
+
+identity of device--> ip address
+ipv4--> 32 bit
+EUI 64 --> ipv6 global unicast
+4 octet
+1 octet =8 bit =4* 8 =32 bit
+represent in decimal format 
+
+11111111.00000000.11111111.00000000
+  255   .   0    .   255  .   0
+
+class A network host host host
+class B network network host host
+class C network network network host
+    	8	8	8	8
+    		  32
+network -- fixed
+host -- changeable
+
+class a 0->126   
+class b 128->191
+class c 192->233
+class d 224->239 --multicast
+class e 240->255 --research purpose
+
+127 local host loopback ipv4
+
+public and private ip address
+
+private ip used for local network
+class a private ip range 10.0.0.0 --- 10.255.255.255
+class b -->172.16.0.0 -- 172.31.255.255
+class c -->192.168.0.0 --- 192.168.255.255
+
+
+appipa : 169.254.0.0 --- 169.254.255.255
+automatic -->private ip automatic addressing
+
+
+---------------------------
+subnetting 
+	classfull =default subnet mask
+	classless = split classfull subnet mask
+
+
+CIDR --classless inter-domain routing
+	255.255.255.0 = /24can be represented as /24
+	8 + 8 + 8 + 0 bits = /24 
+	8 + 8 + 8 + 1 bits = /25
+
+   128 + 64 + 32 + 16 + 8 + 4 + 2 + 1 = 255
+
+ last bits value like/25,/26...     1-128,2-192,3-224,4-240,5-248,6-252,7-254,8-255
+
+
+APIPA - automatic private ip addressing
+	169.254.x.x
+	automatically assign private ip 
+	when DHCP is unavailable
+
+
+ipv4 vs ipv6
+	ipv4==> 32 bit(binary)
+			4 octet 
+			4 billion address
+	ipv6==> 128 bit(binary)
+			340 trillion trillion trilllion address
+			hexadecimal
+				FE01
+
+--------------------------
+mac(media access control) address(physical addresss)
+	mac address lookup
+	hexadecimal format
+		00:11:33:44:55:66
+
+		used in ARP
+				DHCP
+
+
+unicast 
+	ipv4-->	1------------1 
+			connection
+	ipv6 -->  global unicast 
+multicast
+				------ 1
+				|
+		1------------- 1
+				|
+				-------1
+
+	        multi connection one to many
+
+broadcast 
+
+	ipv4--->	broadcast to all in broadcast domain
+    ipv6--->	anycast  to newest
+------------------------------
+
+TCP 3 way handshake
+	
+	syn--> seq 0
+	syn,ack-->seq=0 ack=1 syn+1
+	ack--> seq=X ack=1 
+	seq= X(1)
+
+------------------------------
+coommon ports and protocols
+			TCP
+ ftp21 ssh22 telnet23 smtp25
+ dns53 http80 https443 pop3-110 smb139+445 imap143
+ 			UDP
+
+ dns53 dhcp67,68 tftp69 snmp161
+ ------------------------------
+ UDP -user datagram protocol
+ 	 connectionless and unreliable in transport layer
+ 	 faster packets (video calls)
+ 	 does not care if the packet is loss or mangled during transit
+--------------------------
+subnetting
+ netmask(subnet)
+	1.division of large ip network into small logical network
+	2.identify the host portion and network portion
+FLSM 
+	fixed length subnet mask
+	formula 2^n>=N  ^ means power
+	
+VSLM 
+	variable length subnet mask
+--------------------------
+gateway
+	joins two network
+	entry point of network
+	intermediate devices.
+
+-------------------------
+ip routing
+
+	1.static routing
+		manual configuration
+	2.dynamic routing
+		automatic configuration
+			1.interior gateway protocol(IGP)
+			2.Exterior gateway protocol(EGP)
+--------------------------
+devices in computer network
+
+software
+	IDS-->security purposes
+	gateway--> authentication purposes
+hardware
+	cables
+	repeaters
+	hub--> connected network share to all
+hardare and software
+	bridges--> connect different lan network
+	switches--> switch specific addresses
+	routers--> diffferent network like 
+	(airtel,bsnl,jio)
+	modem --> analog to digital <--> digital to analog
+	firewall --> security
+--------------------------
+protocol
+
+A set of predefined rules that dictate:
+
+    Format of data
+    Transmission of data
+	Receiving data
+
+This is done so that any machine can communicate in some way to each other regardless of the infrastructure
+-----------------------------------------------
+ICMP-internet control message protocol
+	used to check reacheable,troubleshooting
+	usually ping
+	general format 
+
+	type 
+	code
+	checksum
+ping google.com
+tracert google.com
+	patheway of data packets
+--------------------------
+
+DNS(53) -Domain name system
+
+	ipaddress <--> name server(www.google.com)
+
+		root		(3)
+
+ISP     authorize  	(2)
+
+		TLD top level (1) domain
+----------------------------------------------------
+
+DHCP( server67, client 68)-Dynamcic host configuration protocol
+
+	get ip addr dynamically from the server
+	DORA process
+	D--> discover
+	O--> offer
+	R--> request
+	A --> acknowledge
+--------------------------
+ARP -address resolution protocol
+arp -a
+
+layer2 
+
+	based on mac address
+	it generate brodcast id to get mac address of specific ip in the switched (network).
+Arp poisoining 
+
+	This is commonly used to perform a MiTM attacker or Man in the Middle
+
+	Since ARP will try to refresh its cache with what is already has in the table an attacker can
+	take advantage of this
+
+	The attacker can send out the ARP response of “I am IP_of_Router” and when the clients
+	try to refresh it will get that response first and poison the clients cache with the wrong IP
+
+	So when traffic is sent to the router it will be sent to the attacker instead
+
+IDS -->intrution detection system
+	
+	monitore the unusually malicious activity using
+	(digital signature)
+	Will notify an Admin when a security event occurs 
+
+web application firewall detection --wafw00f
+
+IPS -->intrution prevention system
+ [This is like IDS sytem]
+	This does not just alert the Admin about a security event but can actively
+    block the connection or IP itself 
+
+similar in both IDS an IPS 
+2 types 
+		host based
+			in the workstation and server 
+			detect issues and attackers on the syatem itself or in the network ,file system,network connections.
+		network based
+			it is somwhere on the network
+			usually use in the hardware(firewall router)
+
+High availabiity
+
+	The process of making sure a resource is available at all time
+	One good way to have HA is the replicate data
+	Replicating configurations between 2 server allows them to contains the
+    same configs as well as services
+    If 1 were to fail the other can be put in its place without massive downtime
+
+vlan - virtual local area network
+
+	switched network
+	logical group of devices 
+
+virtual ips
+
+
+	This is a special type of IP that resolves to different end point nodes
+	depending on the load of the nodes
+
+	This is commonly used to keep a service up as there can be any number of
+	duplicates behind the VIP
+
+VPN virtual private network
+	intermediate some sort of privacy
+	used to connect remote computer(server)
+	encryption mechanism
+
+proxy server(proxy)
+	privacy purposes
+	used to connect remote computer(server)
+	not an encryption mechanism
+
+ 1.forward proxy(cache server)
+ 	client side used to block some website (in colleges)
+ 2.reverse proxy
+ 	server side (security gateway,load balancer,content delivery network)
+
+DMZ -demilitirized zone
+		
+	permiter network
+
+	internet--> DMZ --> firewall-->we server--> firewall --> database and other
+
+FTP(21) -file transfer protocol
+
+----ftp server--
+	transfer file over internet from server and computer 
+	over tcp/ip network
+	ftp.abc.com
+	some sort of authentication may aso use and (anonymous login also)
+	not a secure protocol not encrypted
+
+SFTP(22) secure file transfer protocol 
+
+	add a layer of security
+	data is encrypted
+	uses tcp
+TFTP(69) trival ftp
+	not secure
+	transfer to localnetwork
+	uses ap udp instead of tc
+TELNET teletype network
+
+	simple command line tool used to access remote server.
+	it fast
+	not secure no encryption
+	it is outdated.
+	telnet frechess.org
+	telnet rainmaker.wounderground.com
+ssh(22) secure shell
+
+	Encrypted the data
+	provide public key authentication and password 
+
+Http 80
+
+	used for view webpages
+	not encrypted
+	all information in plain text
+
+https 443
+
+	secure feature
+	encrypt data retrieved by http
+	uses encryption algorithm
+
+ssl secure socket layer
+
+	protocol uses public key encryption
+	authenticate with website
+
+tls  transport layer security
+
+	standard cryptographic protocol
+	like ssl
+
+--------------------------
+
+				server
+
+	service provider
+	provides service to another computer
+
+client server model
+	(our devices)client program initiates a connection
+	server provides response
+types
+
+	web server(http)--> server web page
+	dns server (dns)--> serve dns queries
+	file server (ftp) --> stored files access files
+	mail server(smtp) --> send/receive mail
+	proxy server --> proxy services
+	network server --> dhcp likenetwork services
+	appilication server --> application based server
+	directory server --> verifcation
+	etc..,
+
+============================================
+		web server
+
+	host websites and server web pages
+	http/https protocol
+	port 80/443
+	
+			send http 
+			request message
+	http client -----------------http server
+	
+			receive http 
+			response message
+			
+			acesss
+	web browser=====================web server
+	
+CLI 
+	GET / HTTP/1.1 
+	Host: google.com
+	HEAD method show only header
+	OPTIONS method use to identify methods
+	POST used to send data
+
+apache2 configuration
+	configured mainly in etc/apache2 folder
+
+	ports.conf ----> port config.				
+	apache2.conf --> logs format(var/log),permissions,
+		var/www/html
+	sites-avaiable--> change webpage config
+			a2dissite --disable sites
+	sites-enabled --> makes webpage available
+			a2ensite --enable sites
+
+================================
+
+		ftp server
+
+		insecure
+vsftpd
+	ls /etc/vsftpd.conf
+
+	anonymous login 
+	local enable
+	listen
+	userlist_enable =yes
+	userlist_file = /etc/vsftpd.userlist
+	userlist_deny = NO
+	chroot == root directory		
+	allow_writeable_chroot = NO
+	
+		chroot=jail environment
+	usually not allow this 
+	
+	user_sub_token=$USER
+	local_root=/home/$USER/ftp/share
+		specify file share path
+=========================
+
+	 SSH --secureshell 
+         openssh
+			sshd 
+			port 22
+		server@ipaddress
+		/bin/bash
+
+
+    authentication
+	password based
+		
+	asymmetric
+		public - private
+	
+	A 		         B ..... Z
+	pub		         public key
+	priv	         data X pub -> encrypt
+	encrypteddata X  priv -- data	
+
+	public key crypto
+~/.ssh/authorized		/.ssh
+				
+id_rsa.pub			id_rsa
+
+	   generating ssh keys
+	ssh-keygen transferring ssh keys
+	ssh-copyb-id
+ ssh configuration(server side)
+	password auth
+	port
+	users
+	groups
+	root login
+	
+
+- ssh configuration (client side)
+	 /.ssh/config file
+	connection drops
+	aws - gcp 
+		ssh - connect
+		idle
+	ServeAliveInterval 300
