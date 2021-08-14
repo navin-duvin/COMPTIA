@@ -1,4 +1,4 @@
-network fundamental
+									network fundamental
 
 	connect between 2 or more system to communicate (or) connection between 2 or more systems
 wired
@@ -35,7 +35,7 @@ process encapsulaion
 TCP/IP MODEL
 
 	4.application --> user process like osi (app,pre,session)
-	3.transport  
+	3.transport   --> TCP UDP
 	2.internet --> ip packets
 	1.network --> mac ,bits
 
@@ -55,8 +55,8 @@ represent in decimal format
 11111111.00000000.11111111.00000000
   255   .   0    .   255  .   0
 
-class A network host host host
-class B network network host host
+class A network host    host    host
+class B network network host    host
 class C network network network host
     	8	8	8	8
     		  32
@@ -69,7 +69,7 @@ class c 192->233
 class d 224->239 --multicast
 class e 240->255 --research purpose
 
-127 local host loopback ipv4
+127.0.0.1 localhost loopback ipv4
 
 public and private ip address
 
@@ -85,8 +85,8 @@ automatic -->private ip automatic addressing
 
 ---------------------------
 subnetting 
-	classfull =default subnet mask
-	classless = split classfull subnet mask
+	classfull =  default subnet mask
+	classless =  split classfull subnet mask
 
 
 CIDR --classless inter-domain routing
@@ -125,8 +125,7 @@ mac(media access control) address(physical addresss)
 
 
 unicast 
-	ipv4-->	1------------1 
-			connection
+	ipv4-->	1------------1 connection
 	ipv6 -->  global unicast 
 multicast
 				------ 1
@@ -140,7 +139,7 @@ multicast
 broadcast 
 
 	ipv4--->	broadcast to all in broadcast domain
-    ipv6--->	anycast  to newest
+        ipv6--->	anycast  to newest
 ------------------------------
 
 TCP 3 way handshake
@@ -213,7 +212,7 @@ A set of predefined rules that dictate:
 
     Format of data
     Transmission of data
-	Receiving data
+    Receiving data
 
 This is done so that any machine can communicate in some way to each other regardless of the infrastructure
 -----------------------------------------------
@@ -485,8 +484,8 @@ vsftpd
 	
 	A 		         B ..... Z
 	pub		         public key
-	priv	         data X pub -> encrypt
-	encrypteddata X  priv -- data	
+	priv	                 data X pub -> encrypt
+	encrypteddata X          priv -- data	
 
 	public key crypto
 ~/.ssh/authorized		/.ssh
