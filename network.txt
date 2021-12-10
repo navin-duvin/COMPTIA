@@ -1,15 +1,34 @@
 									network fundamental
 
-	connect between 2 or more system to communicate (or) connection between 2 or more systems
+	connect between 2 or more system to communicate(sharing the data) (or) connection between 2 or more systems
 wired
 wireless
 ----------------------------
 1.lan-local area network ethernet also(within company)
 2.wan -->2 or more lan (global connectivity)
 3.man metropolitan network(network across the city/town)
+4.pan --> interconnection of personal technology devices to communicate over a short distance upto 10meters
+5.can(campus area networkk)-->connection of devices within a campus area
+6.Gan(Global area network)--> It uses satellites to connect devices over global are.
 bits-> 0 1 (speed)
 bytes-> 8+bits (data)
 
+bandwidth
+	The range of limit of network between its upper and lower frequency is called bandwidth.
+	
+nodes and links
+	A network is a connection setup of two or more computers directly connected by some physical mediums like optical fiber or coaxial cable.
+	This physical medium of connection is known as a link.
+	The computers that it is connected are known as nodes.
+	
+gateway
+	A node that is connected to two or more networks is commonly known as a gateway.
+	
+Differences between gateway and router:
+	A router sends the data between two similar networks while gateway sends the data between two dissimilar networks.
+	
+Network interface card(NIC)
+	It is a peripheral card attached to the PC to connect to a network. Every NIC has its own MAC address that identifies the PC on the network.
 ---------------------------
 network topology
 	bus--> main connectivity backbone link
@@ -251,9 +270,12 @@ DHCP( server67, client 68)-Dynamcic host configuration protocol
 --------------------------
 ARP -address resolution protocol
 arp -a
-
-layer2 
-
+POP3
+	POP3 stands for Post Office Protocol version3. 
+	POP is responsible for accessing the mail service on a client machine. 
+	POP3 works on two models such as Delete mode and Keep mode.
+	
+layer2 address
 	based on mac address
 	it generate brodcast id to get mac address of specific ip in the switched (network).
 Arp poisoining 
